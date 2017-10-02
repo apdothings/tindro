@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="cdc-8M-UuQ">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="Gjz-M0-fwg" customClass="HomeViewController" customModule="Tindro" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AL5-xh-NPv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hV9-AI-iMG">
+                                <rect key="frame" x="16" y="64" width="78" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="My Profile"/>
+                                <connections>
+                                    <action selector="myProfileButton:" destination="Gjz-M0-fwg" eventType="touchUpInside" id="0tn-fk-0uk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJ7-VM-a6i">
+                                <rect key="frame" x="278" y="64" width="84" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="My Matches"/>
+                                <connections>
+                                    <segue destination="Bad-9k-JeN" kind="show" id="UbD-Mn-Es9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="7ln-18-TDZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Gw9-Pp-TZ0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aaa-lu-dNF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44" y="38.23088455772114"/>
+        </scene>
+        <!--My Matches View Controller-->
+        <scene sceneID="huV-fL-osp">
+            <objects>
+                <viewController storyboardIdentifier="MyMatchesViewController" id="Bad-9k-JeN" customClass="MyMatchesViewController" customModule="Tindro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CWt-Tw-uyf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GSE-ng-yza">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gRy-do-o7T" firstAttribute="bottom" secondItem="GSE-ng-yza" secondAttribute="bottom" id="Tzm-nz-6hc"/>
+                            <constraint firstItem="GSE-ng-yza" firstAttribute="leading" secondItem="gRy-do-o7T" secondAttribute="leading" id="bmR-FG-Whw"/>
+                            <constraint firstItem="gRy-do-o7T" firstAttribute="trailing" secondItem="GSE-ng-yza" secondAttribute="trailing" id="o5O-Am-vC7"/>
+                            <constraint firstItem="GSE-ng-yza" firstAttribute="top" secondItem="gRy-do-o7T" secondAttribute="top" id="olS-RC-usN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gRy-do-o7T"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Tds-gw-UjN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9c9-NK-7YF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860" y="47"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="F8Q-8a-ScE">
+            <objects>
+                <navigationController storyboardIdentifier="MymatchesHomeViewController" automaticallyAdjustsScrollViewInsets="NO" id="p45-0T-Eb8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="amt-sc-WRs">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Gjz-M0-fwg" kind="relationship" relationship="rootViewController" id="9fx-eq-rGO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fAq-ZJ-Fo2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-786" y="39"/>
+        </scene>
+    </scenes>
+</document>
