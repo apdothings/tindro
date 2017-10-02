@@ -17,6 +17,8 @@
 		FD4430C51F81E7DE00231B59 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD4430C41F81E7DE00231B59 /* Auth.storyboard */; };
 		FD4430C71F81E82E00231B59 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4430C61F81E82E00231B59 /* LoginViewController.swift */; };
 		FD4430C91F81E84200231B59 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4430C81F81E84200231B59 /* LogoutViewController.swift */; };
+		FD4430D01F81F3AA00231B59 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD4430CF1F81F18C00231B59 /* GoogleService-Info.plist */; };
+		FD4430D21F81F90A00231B59 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4430D11F81F90A00231B59 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,10 +33,11 @@
 		FD4430B81F81E1A500231B59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD4430BB1F81E1A500231B59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD4430BD1F81E1A500231B59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FD4430C31F81E37F00231B59 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FD4430C41F81E7DE00231B59 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		FD4430C61F81E82E00231B59 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FD4430C81F81E84200231B59 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
+		FD4430CF1F81F18C00231B59 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		FD4430D11F81F90A00231B59 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,7 @@
 		FD4430AD1F81E1A500231B59 /* Tindro */ = {
 			isa = PBXGroup;
 			children = (
+				FD4430CF1F81F18C00231B59 /* GoogleService-Info.plist */,
 				FD4430AE1F81E1A500231B59 /* AppDelegate.swift */,
 				FD4430B01F81E1A500231B59 /* ViewController.swift */,
 				FD4430B21F81E1A500231B59 /* Main.storyboard */,
@@ -94,7 +98,6 @@
 				FD4430B81F81E1A500231B59 /* Assets.xcassets */,
 				FD4430BA1F81E1A500231B59 /* LaunchScreen.storyboard */,
 				FD4430BD1F81E1A500231B59 /* Info.plist */,
-				FD4430C31F81E37F00231B59 /* GoogleService-Info.plist */,
 				FD4430B51F81E1A500231B59 /* Tindro.xcdatamodeld */,
 			);
 			path = Tindro;
@@ -103,6 +106,7 @@
 		FD4430CA1F81E84C00231B59 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				FD4430D11F81F90A00231B59 /* ProfileViewController.swift */,
 				FD4430C61F81E82E00231B59 /* LoginViewController.swift */,
 				FD4430C81F81E84200231B59 /* LogoutViewController.swift */,
 				FD4430C41F81E7DE00231B59 /* Auth.storyboard */,
@@ -172,6 +176,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD4430D01F81F3AA00231B59 /* GoogleService-Info.plist in Resources */,
 				FD4430C51F81E7DE00231B59 /* Auth.storyboard in Resources */,
 				FD4430BC1F81E1A500231B59 /* LaunchScreen.storyboard in Resources */,
 				FD4430B91F81E1A500231B59 /* Assets.xcassets in Resources */,
@@ -246,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD4430D21F81F90A00231B59 /* ProfileViewController.swift in Sources */,
 				FD4430C71F81E82E00231B59 /* LoginViewController.swift in Sources */,
 				FD4430B11F81E1A500231B59 /* ViewController.swift in Sources */,
 				FD4430B71F81E1A500231B59 /* Tindro.xcdatamodeld in Sources */,

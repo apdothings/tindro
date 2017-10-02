@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  ProfileViewController.swift
 //  Tindro
 //
 //  Created by Salem Abdulla on 10/2/17.
@@ -7,10 +7,8 @@
 //
 
 import UIKit
-import Firebase
-import FirebaseAuth
 
-class LoginViewController: UIViewController {
+class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
