@@ -22,6 +22,23 @@ class MyMatchesViewController: UIViewController {
     var storageRef: StorageReference!
     
     
+//    @IBAction func testButtonAction(sender: UIButton) {
+//
+//        print(sender.tag)
+//
+//        let cell = myMatchesTableView.cellForRow(at:
+//            IndexPath(row: sender.tag, section: 0) as IndexPath) as! MyMatchesCustomCell
+//
+//        if cell.likeBtn.titleLabel?.text == "Cell \(sender.tag)" { //Your logic here. Check If button's image has "Liked Image than change Image to UnLiked Image"
+//            print("liked")
+////            cell.likeB.text = "\(sender.tag)"
+//        }
+//        else {
+////            cell.likeButton.text = "Cell \(sender.tag)"
+//            print("unliked")
+//        }
+//    }
+    
     @IBOutlet weak var myMatchesTableView: UITableView!{
     didSet{
     myMatchesTableView.register(MyMatchesCustomCell.cellNib, forCellReuseIdentifier: MyMatchesCustomCell.cellIdentifier)
@@ -84,7 +101,21 @@ extension MyMatchesViewController : UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return posts.count
     }
-    
+//    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+//
+//        let cell = myMatchesTableView.dequeueReusableCell(withIdentifier: MyMatchesCustomCell.cellIdentifier) as? MyMatchesCustomCell
+        //Check If item is liked
+//        if  {
+//            
+//            //Set image for like on button
+//        }
+//        else {
+//            //Set image for unlike on button
+//        }
+//        cell?.likeBtn.tag = indexPath.row // This will assign tag to each button in tableView
+////
+////        return cell!
+//    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = myMatchesTableView.dequeueReusableCell(withIdentifier: MyMatchesCustomCell.cellIdentifier) as? MyMatchesCustomCell else {
             return UITableViewCell()

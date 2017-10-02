@@ -52,9 +52,26 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NZp-jB-o5s">
-                        <rect key="frame" x="230" y="0.0" width="130" height="90"/>
+                        <rect key="frame" x="266" y="0.0" width="94" height="90"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 Like" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvp-ZL-ffu">
+                        <rect key="frame" x="221" y="34" width="43" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hob-wV-in1">
+                        <rect key="frame" x="227" y="59" width="43" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="Unlike"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuZ-e5-TBm">
+                        <rect key="frame" x="230" y="0.0" width="30" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="Like"/>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="oMe-hr-jqz" firstAttribute="leading" secondItem="sAp-Kw-lbC" secondAttribute="leadingMargin" id="49X-YF-71I"/>
@@ -70,6 +87,9 @@
             <viewLayoutGuide key="safeArea" id="qfQ-E3-zuP"/>
             <connections>
                 <outlet property="ImageCell" destination="NZp-jB-o5s" id="ulc-03-hT7"/>
+                <outlet property="likeBtn" destination="wuZ-e5-TBm" id="U0j-Kn-8LE"/>
+                <outlet property="likeLabel" destination="rvp-ZL-ffu" id="W5g-SQ-lLs"/>
+                <outlet property="unlikeBtn" destination="hob-wV-in1" id="2R7-ke-FqZ"/>
                 <outlet property="userAge" destination="zfZ-sD-S1y" id="CLi-Am-DgC"/>
                 <outlet property="userDescription" destination="wt3-YR-l2V" id="3YA-L4-Aaa"/>
                 <outlet property="userName" destination="Nya-cl-ahu" id="yWx-EB-4A8"/>
