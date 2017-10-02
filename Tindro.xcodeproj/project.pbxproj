@@ -13,7 +13,7 @@
 		FD0871101F822E270032CCBB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD4430B21F81E1A500231B59 /* Home.storyboard */; };
 		FD0871141F8249F20032CCBB /* MyMatchesCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0871131F8249F20032CCBB /* MyMatchesCustomCell.swift */; };
 		FD0871161F8253760032CCBB /* myExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0871151F8253750032CCBB /* myExtension.swift */; };
-		FD3339831F821F5A00267E16 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD3339821F821F5A00267E16 /* View.xib */; };
+		FD3339831F821F5A00267E16 /* MyMatchesCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD3339821F821F5A00267E16 /* MyMatchesCustomCell.xib */; };
 		FD3339861F8221FD00267E16 /* UsersProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3339851F8221FD00267E16 /* UsersProfile.swift */; };
 		FD4430AF1F81E1A500231B59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4430AE1F81E1A500231B59 /* AppDelegate.swift */; };
 		FD4430B71F81E1A500231B59 /* Tindro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD4430B51F81E1A500231B59 /* Tindro.xcdatamodeld */; };
@@ -35,7 +35,7 @@
 		FD08710E1F822CA70032CCBB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FD0871131F8249F20032CCBB /* MyMatchesCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMatchesCustomCell.swift; sourceTree = "<group>"; };
 		FD0871151F8253750032CCBB /* myExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myExtension.swift; sourceTree = "<group>"; };
-		FD3339821F821F5A00267E16 /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		FD3339821F821F5A00267E16 /* MyMatchesCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyMatchesCustomCell.xib; sourceTree = "<group>"; };
 		FD3339851F8221FD00267E16 /* UsersProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersProfile.swift; sourceTree = "<group>"; };
 		FD4430AB1F81E1A500231B59 /* Tindro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tindro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD4430AE1F81E1A500231B59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 		FD3339811F821F3300267E16 /* MyMatchesCustomCell */ = {
 			isa = PBXGroup;
 			children = (
-				FD3339821F821F5A00267E16 /* View.xib */,
+				FD3339821F821F5A00267E16 /* MyMatchesCustomCell.xib */,
 				FD0871131F8249F20032CCBB /* MyMatchesCustomCell.swift */,
 			);
 			path = MyMatchesCustomCell;
@@ -235,7 +235,7 @@
 				FD0871101F822E270032CCBB /* Home.storyboard in Resources */,
 				FD08710D1F822B8F0032CCBB /* Info.plist in Resources */,
 				FD4430D01F81F3AA00231B59 /* GoogleService-Info.plist in Resources */,
-				FD3339831F821F5A00267E16 /* View.xib in Resources */,
+				FD3339831F821F5A00267E16 /* MyMatchesCustomCell.xib in Resources */,
 				FD4430C51F81E7DE00231B59 /* Auth.storyboard in Resources */,
 				FD4430B91F81E1A500231B59 /* Assets.xcassets in Resources */,
 			);

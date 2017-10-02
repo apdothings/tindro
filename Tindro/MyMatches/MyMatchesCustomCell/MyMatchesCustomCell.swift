@@ -18,7 +18,7 @@ class MyMatchesCustomCell: UITableViewCell {
     @IBOutlet weak var ImageCell: UIImageView!
     
     static let cellIdentifier = "MatchesCell"
-    static let cellNib = UINib(nibName: "myMatchesTableView", bundle: Bundle.main)
+    static let cellNib = UINib(nibName: "MyMatchesCustomCell", bundle: Bundle.main)
     
     override func awakeFromNib() {
         super.awakeFromNib()

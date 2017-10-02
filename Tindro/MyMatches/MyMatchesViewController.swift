@@ -56,17 +56,17 @@ func fetchpost(){
         
         
         if let imageurl = mypost["imagePost"] as? String,
-            let username = mypost["name"] as? String,
-            let userage = mypost["age"] as? String,
-            let userdesc = mypost["desc"] as? String,
-            let userid = mypost["anID"] as? String {
+            let name = mypost["name"] as? String,
+            let age = mypost["age"] as? String,
+            let desc = mypost["Description"] as? String,
+            let userid = mypost["userID"] as? String {
             
             
             //            let newPost = mypost(imageName: post)
             
             
             DispatchQueue.main.async {
-                let newPost = UsersProfile(anID: userid, usersName: username, usersAge: userage, usersImage: imageurl, usersDesc : userdesc)
+                let newPost = UsersProfile(anID: userid, usersName: name, usersAge: age, usersImage: imageurl, usersDesc : desc)
                 
                 
                 self.posts.append(newPost)

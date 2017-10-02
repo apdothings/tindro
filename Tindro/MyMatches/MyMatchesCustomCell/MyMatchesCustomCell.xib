@@ -70,10 +70,6 @@
             <viewLayoutGuide key="safeArea" id="qfQ-E3-zuP"/>
             <connections>
                 <outlet property="ImageCell" destination="NZp-jB-o5s" id="ulc-03-hT7"/>
-                <outlet property="locationOfTournament" destination="zfZ-sD-S1y" id="vYE-yB-m5p"/>
-                <outlet property="numberOfParticipants" destination="wt3-YR-l2V" id="NDp-h8-5ii"/>
-                <outlet property="organizerName" destination="SHR-sE-Aoc" id="Kma-MC-Sw7"/>
-                <outlet property="tournamentName" destination="Nya-cl-ahu" id="WgB-fb-eOR"/>
                 <outlet property="userAge" destination="zfZ-sD-S1y" id="CLi-Am-DgC"/>
                 <outlet property="userDescription" destination="wt3-YR-l2V" id="3YA-L4-Aaa"/>
                 <outlet property="userName" destination="Nya-cl-ahu" id="yWx-EB-4A8"/>
