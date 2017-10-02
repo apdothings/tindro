@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D6F6CCDFCF2E06EA125B012E /* Pods_Tindro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C32957E9B9348BEABB81FCE /* Pods_Tindro.framework */; };
 		FD4430AF1F81E1A500231B59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4430AE1F81E1A500231B59 /* AppDelegate.swift */; };
 		FD4430B11F81E1A500231B59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4430B01F81E1A500231B59 /* ViewController.swift */; };
 		FD4430B41F81E1A500231B59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD4430B21F81E1A500231B59 /* Main.storyboard */; };
 		FD4430B71F81E1A500231B59 /* Tindro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD4430B51F81E1A500231B59 /* Tindro.xcdatamodeld */; };
 		FD4430B91F81E1A500231B59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD4430B81F81E1A500231B59 /* Assets.xcassets */; };
 		FD4430BC1F81E1A500231B59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD4430BA1F81E1A500231B59 /* LaunchScreen.storyboard */; };
+		FD4430C51F81E7DE00231B59 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD4430C41F81E7DE00231B59 /* Auth.storyboard */; };
+		FD4430C71F81E82E00231B59 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4430C61F81E82E00231B59 /* LoginViewController.swift */; };
+		FD4430C91F81E84200231B59 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4430C81F81E84200231B59 /* LogoutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C32957E9B9348BEABB81FCE /* Pods_Tindro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tindro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91039EBA7228A329DCA2074F /* Pods-Tindro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tindro.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tindro/Pods-Tindro.release.xcconfig"; sourceTree = "<group>"; };
+		EA52B5462D9BDF293635A394 /* Pods-Tindro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tindro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tindro/Pods-Tindro.debug.xcconfig"; sourceTree = "<group>"; };
 		FD4430AB1F81E1A500231B59 /* Tindro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tindro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD4430AE1F81E1A500231B59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD4430B01F81E1A500231B59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +31,10 @@
 		FD4430B81F81E1A500231B59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD4430BB1F81E1A500231B59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD4430BD1F81E1A500231B59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD4430C31F81E37F00231B59 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FD4430C41F81E7DE00231B59 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		FD4430C61F81E82E00231B59 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FD4430C81F81E84200231B59 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +42,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6F6CCDFCF2E06EA125B012E /* Pods_Tindro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B50E22282E70B9A0B18FD36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA52B5462D9BDF293635A394 /* Pods-Tindro.debug.xcconfig */,
+				91039EBA7228A329DCA2074F /* Pods-Tindro.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A9815C13AFE19117193C35BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C32957E9B9348BEABB81FCE /* Pods_Tindro.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FD4430A21F81E1A500231B59 = {
 			isa = PBXGroup;
 			children = (
 				FD4430AD1F81E1A500231B59 /* Tindro */,
 				FD4430AC1F81E1A500231B59 /* Products */,
+				3B50E22282E70B9A0B18FD36 /* Pods */,
+				A9815C13AFE19117193C35BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +90,24 @@
 				FD4430AE1F81E1A500231B59 /* AppDelegate.swift */,
 				FD4430B01F81E1A500231B59 /* ViewController.swift */,
 				FD4430B21F81E1A500231B59 /* Main.storyboard */,
+				FD4430CA1F81E84C00231B59 /* Auth */,
 				FD4430B81F81E1A500231B59 /* Assets.xcassets */,
 				FD4430BA1F81E1A500231B59 /* LaunchScreen.storyboard */,
 				FD4430BD1F81E1A500231B59 /* Info.plist */,
+				FD4430C31F81E37F00231B59 /* GoogleService-Info.plist */,
 				FD4430B51F81E1A500231B59 /* Tindro.xcdatamodeld */,
 			);
 			path = Tindro;
+			sourceTree = "<group>";
+		};
+		FD4430CA1F81E84C00231B59 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				FD4430C61F81E82E00231B59 /* LoginViewController.swift */,
+				FD4430C81F81E84200231B59 /* LogoutViewController.swift */,
+				FD4430C41F81E7DE00231B59 /* Auth.storyboard */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +117,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD4430C01F81E1A500231B59 /* Build configuration list for PBXNativeTarget "Tindro" */;
 			buildPhases = (
+				69AA7C01D9FF2350DBCB7EEB /* [CP] Check Pods Manifest.lock */,
 				FD4430A71F81E1A500231B59 /* Sources */,
 				FD4430A81F81E1A500231B59 /* Frameworks */,
 				FD4430A91F81E1A500231B59 /* Resources */,
+				494C3CDB4B94F374885AB4A6 /* [CP] Embed Pods Frameworks */,
+				7EA15C4EA328A2D56D85CA57 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,6 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD4430C51F81E7DE00231B59 /* Auth.storyboard in Resources */,
 				FD4430BC1F81E1A500231B59 /* LaunchScreen.storyboard in Resources */,
 				FD4430B91F81E1A500231B59 /* Assets.xcassets in Resources */,
 				FD4430B41F81E1A500231B59 /* Main.storyboard in Resources */,
@@ -134,13 +181,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		494C3CDB4B94F374885AB4A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Tindro/Pods-Tindro-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tindro/Pods-Tindro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69AA7C01D9FF2350DBCB7EEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tindro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EA15C4EA328A2D56D85CA57 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tindro/Pods-Tindro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FD4430A71F81E1A500231B59 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD4430C71F81E82E00231B59 /* LoginViewController.swift in Sources */,
 				FD4430B11F81E1A500231B59 /* ViewController.swift in Sources */,
 				FD4430B71F81E1A500231B59 /* Tindro.xcdatamodeld in Sources */,
+				FD4430C91F81E84200231B59 /* LogoutViewController.swift in Sources */,
 				FD4430AF1F81E1A500231B59 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +385,7 @@
 		};
 		FD4430C11F81E1A500231B59 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA52B5462D9BDF293635A394 /* Pods-Tindro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +401,7 @@
 		};
 		FD4430C21F81E1A500231B59 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91039EBA7228A329DCA2074F /* Pods-Tindro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
