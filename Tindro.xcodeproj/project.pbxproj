@@ -11,6 +11,8 @@
 		FD08710D1F822B8F0032CCBB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD08710C1F822B280032CCBB /* Info.plist */; };
 		FD08710F1F822CA70032CCBB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD08710E1F822CA70032CCBB /* HomeViewController.swift */; };
 		FD0871101F822E270032CCBB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD4430B21F81E1A500231B59 /* Home.storyboard */; };
+		FD0871141F8249F20032CCBB /* MyMatchesCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0871131F8249F20032CCBB /* MyMatchesCustomCell.swift */; };
+		FD0871161F8253760032CCBB /* myExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0871151F8253750032CCBB /* myExtension.swift */; };
 		FD3339831F821F5A00267E16 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD3339821F821F5A00267E16 /* View.xib */; };
 		FD3339861F8221FD00267E16 /* UsersProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3339851F8221FD00267E16 /* UsersProfile.swift */; };
 		FD4430AF1F81E1A500231B59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4430AE1F81E1A500231B59 /* AppDelegate.swift */; };
@@ -31,6 +33,8 @@
 		EA52B5462D9BDF293635A394 /* Pods-Tindro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tindro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tindro/Pods-Tindro.debug.xcconfig"; sourceTree = "<group>"; };
 		FD08710C1F822B280032CCBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD08710E1F822CA70032CCBB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FD0871131F8249F20032CCBB /* MyMatchesCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMatchesCustomCell.swift; sourceTree = "<group>"; };
+		FD0871151F8253750032CCBB /* myExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myExtension.swift; sourceTree = "<group>"; };
 		FD3339821F821F5A00267E16 /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		FD3339851F8221FD00267E16 /* UsersProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersProfile.swift; sourceTree = "<group>"; };
 		FD4430AB1F81E1A500231B59 /* Tindro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tindro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +80,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FD0871171F82537B0032CCBB /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				FD0871151F8253750032CCBB /* myExtension.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
 		FD33397F1F821E2800267E16 /* MyMatches */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +95,7 @@
 				FD4430B21F81E1A500231B59 /* Home.storyboard */,
 				FD08710E1F822CA70032CCBB /* HomeViewController.swift */,
 				FD4430D31F8208B700231B59 /* MyMatchesViewController.swift */,
+				FD0871171F82537B0032CCBB /* extension */,
 			);
 			path = MyMatches;
 			sourceTree = "<group>";
@@ -91,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				FD3339821F821F5A00267E16 /* View.xib */,
+				FD0871131F8249F20032CCBB /* MyMatchesCustomCell.swift */,
 			);
 			path = MyMatchesCustomCell;
 			sourceTree = "<group>";
@@ -300,8 +314,10 @@
 				FD4430D81F82169400231B59 /* Universal Function.swift in Sources */,
 				FD4430C71F81E82E00231B59 /* LoginViewController.swift in Sources */,
 				FD08710F1F822CA70032CCBB /* HomeViewController.swift in Sources */,
+				FD0871141F8249F20032CCBB /* MyMatchesCustomCell.swift in Sources */,
 				FD4430B71F81E1A500231B59 /* Tindro.xcdatamodeld in Sources */,
 				FD4430D41F8208B700231B59 /* MyMatchesViewController.swift in Sources */,
+				FD0871161F8253760032CCBB /* myExtension.swift in Sources */,
 				FD4430AF1F81E1A500231B59 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

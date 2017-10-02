@@ -13,6 +13,12 @@ import FirebaseDatabase
 
 class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    @IBAction func doneButton(_ sender: Any) {
+            let mainStoryboard = UIStoryboard(name: "Home", bundle: nil)
+            guard let targetVC = mainStoryboard.instantiateViewController(withIdentifier: "MymatchesHomeViewController") as? UINavigationController else { return }
+            self.dismiss(animated: true, completion: nil)
+            self.present(targetVC, animated: true, completion: nil)
+    }
     var posts: [UsersProfile] = []
     var databaseRef: DatabaseReference!
     var storageRef: StorageReference!
