@@ -109,20 +109,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sN4-VN-RTa">
-                                <rect key="frame" x="16" y="212" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oXu-Kf-gih">
                                 <rect key="frame" x="77" y="161" width="221" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign Up"/>
-                                <connections>
-                                    <segue destination="AR4-KA-SKr" kind="show" id="rQW-M4-JaW"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -131,7 +121,6 @@
                     <connections>
                         <outlet property="confirmTextField" destination="5VW-FN-Vah" id="sdN-i4-xq4"/>
                         <outlet property="emailTextField" destination="0wZ-92-GyF" id="HPC-eY-Z0N"/>
-                        <outlet property="nameTextField" destination="sN4-VN-RTa" id="lKu-hc-Cvk"/>
                         <outlet property="passwordTextField" destination="hGh-KL-FtE" id="sFd-PT-Vv0"/>
                         <outlet property="signUpButton" destination="oXu-Kf-gih" id="zJQ-So-Yph"/>
                     </connections>

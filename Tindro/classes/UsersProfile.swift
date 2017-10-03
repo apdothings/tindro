@@ -20,17 +20,20 @@ class UsersProfile {
     var age : String = ""
     
     var desc : String = ""
+    
+    var gender : String = ""
 
     
     init() {}
     
-    init(anID: String, usersName: String, usersAge: String, usersImage: String, usersDesc : String) {
+    init(anID: String, usersName: String,usersGender: String, usersAge: String, usersImage: String, usersDesc : String) {
         
         userid = anID
         imageurl = usersImage
         name = usersName
         age = usersAge
         desc = usersDesc
+        gender = usersGender
     
     }
 }

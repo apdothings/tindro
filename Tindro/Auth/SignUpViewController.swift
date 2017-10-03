@@ -39,7 +39,7 @@ class SignUpViewController: UIViewController {
             return
             
         } else if email == "" || password == ""{
-            PromptHandler.showPrompt(title: "Missing input field", message: "Input field must be filled", in: self)
+            PromptHandler.showPrompt(title: "Missing input field ", message: "Please fill the missing fields", in: self)
             return
             
         }
@@ -55,7 +55,7 @@ class SignUpViewController: UIViewController {
                 let post : [String : Any] = ["email" : email ]
                 ref.child("users").child(validUser.uid).setValue(post)
                 
-                self.navigationController?.popViewController(animated: true)
+//                self.navigationController?.popViewController(animated: true)
                 
                 let mainStoryboard = UIStoryboard(name: "Auth", bundle: nil)
                 guard let targetVC = mainStoryboard.instantiateViewController(withIdentifier: "ProfileViewController") as? ProfileViewController else { return }

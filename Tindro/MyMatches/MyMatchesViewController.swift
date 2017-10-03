@@ -76,6 +76,7 @@ func fetchpost(){
             let name = mypost["name"] as? String,
             let age = mypost["age"] as? String,
             let desc = mypost["Description"] as? String,
+            let gender = mypost["gender"] as? String,
             let userid = mypost["userID"] as? String {
             
             
@@ -83,7 +84,7 @@ func fetchpost(){
             
             
             DispatchQueue.main.async {
-                let newPost = UsersProfile(anID: userid, usersName: name, usersAge: age, usersImage: imageurl, usersDesc : desc)
+                let newPost = UsersProfile(anID: userid,usersName: name, usersGender: gender, usersAge: age, usersImage: imageurl, usersDesc : desc)
                 
                 
                 self.posts.append(newPost)
@@ -101,6 +102,7 @@ extension MyMatchesViewController : UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return posts.count
     }
+    //Like functions//
 //    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 //
 //        let cell = myMatchesTableView.dequeueReusableCell(withIdentifier: MyMatchesCustomCell.cellIdentifier) as? MyMatchesCustomCell
@@ -122,17 +124,12 @@ extension MyMatchesViewController : UITableViewDelegate,UITableViewDataSource {
         }
         let post = posts[indexPath.row]
         
-        //        cell.tournamentName.text = tournamentName
-        //        cell.locationOfTournament.text = location
-        //        cell.organizerName.text = organizerName
-        //        cell.numberOfParticipants.text = participation
-        
         cell.userName.text = post.name
         cell.userAge.text = post.age
         cell.userDescription.text = post.desc
         
         
-        print(post.imageurl)
+//        print(post.imageurl)
         cell.ImageCell.loadImage(from: post.imageurl)
         
         

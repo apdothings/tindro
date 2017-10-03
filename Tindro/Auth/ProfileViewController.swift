@@ -16,7 +16,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     @IBAction func doneButton(_ sender: Any) {
             let mainStoryboard = UIStoryboard(name: "Home", bundle: nil)
             guard let targetVC = mainStoryboard.instantiateViewController(withIdentifier: "MymatchesHomeViewController") as? UINavigationController else { return }
-            self.dismiss(animated: true, completion: nil)
+//            self.dismiss(animated: true, completion: nil)
             self.present(targetVC, animated: true, completion: nil)
     }
     var posts: [UsersProfile] = []
@@ -55,8 +55,8 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         super.viewDidLoad()
         fetchpost()
         
-        self.nameTextField.text = "Monash Dota Competition"
-        self.nameTextField.text = name as? String
+//        self.nameTextField.text = "Monash Dota Competition"
+//        self.nameTextField.text = name as? String
         
         
         
@@ -210,7 +210,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
                 
                 
                 DispatchQueue.main.async {
-                    let newPost = UsersProfile(anID: userid,usersName: name, usersAge: age, usersImage : imageurl, usersDesc : desc)
+                    let newPost = UsersProfile(anID: userid,usersName: name,usersGender: gender, usersAge: age, usersImage : imageurl, usersDesc : desc)
                     
                     
                     self.posts.append(newPost)

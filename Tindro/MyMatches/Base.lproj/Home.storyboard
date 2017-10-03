@@ -25,21 +25,29 @@
                                     <action selector="myProfileButton:" destination="Gjz-M0-fwg" eventType="touchUpInside" id="0tn-fk-0uk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJ7-VM-a6i">
-                                <rect key="frame" x="278" y="64" width="84" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="My Matches"/>
-                                <connections>
-                                    <segue destination="Bad-9k-JeN" kind="show" id="UbD-Mn-Es9"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="md4-D3-ClT">
-                                <rect key="frame" x="49" y="235" width="276" height="196"/>
+                                <rect key="frame" x="49" y="137" width="276" height="196"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9Z-bb-2p5">
+                                <rect key="frame" x="275" y="64" width="84" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="My Matches"/>
+                                <connections>
+                                    <segue destination="Bad-9k-JeN" kind="show" id="fbl-Hs-ohh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJ7-VM-a6i">
+                                <rect key="frame" x="131" y="341" width="112" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Find Your Match"/>
+                                <connections>
+                                    <segue destination="Bad-9k-JeN" kind="show" id="UbD-Mn-Es9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="7ln-18-TDZ"/>
@@ -100,4 +108,7 @@
             <point key="canvasLocation" x="-786" y="39"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="UbD-Mn-Es9"/>
+    </inferredMetricsTieBreakers>
 </document>
